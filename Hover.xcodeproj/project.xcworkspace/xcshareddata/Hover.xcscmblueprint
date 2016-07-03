@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "742BF5FC8006EA5B23D8853F51B39CD37FC567E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "57D45B3DA1863BE7FFCC8D46BF9991746D00C1D0" : 0,
+    "742BF5FC8006EA5B23D8853F51B39CD37FC567E7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "46993C08-9ED1-4FEE-B32D-D650AD3C8510",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "57D45B3DA1863BE7FFCC8D46BF9991746D00C1D0" : "OpenCV-iOS\/",
+    "742BF5FC8006EA5B23D8853F51B39CD37FC567E7" : "hovering-control\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hover",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hover.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Fl0p\/OpenCV-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57D45B3DA1863BE7FFCC8D46BF9991746D00C1D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/prbodas\/hovering-control.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "742BF5FC8006EA5B23D8853F51B39CD37FC567E7"
+    }
+  ]
+}
