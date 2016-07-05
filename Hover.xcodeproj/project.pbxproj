@@ -217,7 +217,7 @@
 				TargetAttributes = {
 					9A5744D81D290AB300F66A93 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 276R75FG83;
+						DevelopmentTeam = 4S377L838K;
 					};
 					9A5744EC1D290AB300F66A93 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -434,7 +434,7 @@
 				);
 				INFOPLIST_FILE = Hover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FBU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prbodas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hover/Hover-Bridging-Header.h";
@@ -453,7 +453,7 @@
 				);
 				INFOPLIST_FILE = Hover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FBU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prbodas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hover/Hover-Bridging-Header.h";

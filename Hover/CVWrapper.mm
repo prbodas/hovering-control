@@ -8,25 +8,55 @@
 
 #import "CVWrapper.h"
 #import "UIImage+OpenCV.h"
+#import <opencv2/highgui/cap_ios.h>
+using namespace cv;
+
+
 //#import "stitching.h"
 //#import "UIImage+Rotate.h"
 
+@interface CVWrapper() <CvVideoCameraDelegate>
+{
+}
+@end
 
 @implementation CVWrapper
-
-+ (UIImage*) processImageWithOpenCV: (UIImage*) inputImage
 {
-    //prints "enterprocessing"
-    NSLog(@"enterprocessing");
-    
-    //returns blank UIImage
-    return [[UIImage alloc] init];
-    
-    /*NSArray* imageArray = [NSArray arrayWithObject:inputImage];
-    UIImage* result = [[self class] processWithArray:imageArray];
-    return result;*/
+    UIImageView * imageView;
+    CvVideoCamera * myCamera;
 }
 
+
+-(id)initWithImageView:(UIImageView*)iv
+{
+    //viewController = c;
+    imageView = iv;
+    
+    myCamera = [[CvVideoCamera alloc] initWithParentView:imageView];
+    
+    //camera setup
+    myCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
+    myCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetMedium;
+    myCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+    myCamera.rotateVideo = YES;
+    [myCamera start];
+    
+    
+    myCamera.delegate = self;
+    
+    return self;
+}
+
+- (void)processImage:(Mat&)image
+{
+    // Do some OpenCV stuff with the image
+    //automatically calls and displays modified image
+    NSLog(@"Processing");
+}
+
+
+
+//TRASH CODE AS OF NOW
 //+ (UIImage*) processWithOpenCVImage1:(UIImage*)inputImage1 image2:(UIImage*)inputImage2;
 //{
 //    NSArray* imageArray = [NSArray arrayWithObjects:inputImage1,inputImage2,nil];

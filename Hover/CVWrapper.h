@@ -6,16 +6,14 @@
 //  Copyright (c) 2013 foundry. All rights reserved.
 //
 
+#import <opencv2/highgui/cap_ios.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CVWrapper : NSObject
+@interface CVWrapper : NSObject <CvVideoCameraDelegate>
 
-+ (UIImage*) processImageWithOpenCV: (UIImage*) inputImage;
-
-//+ (UIImage*) processWithOpenCVImage1:(UIImage*)inputImage1 image2:(UIImage*)inputImage2;
-
-//+ (UIImage*) processWithArray:(NSArray*)imageArray;
+//- (void)processImage:(Mat&)image;
+-(id)initWithImageView:(UIImageView*)iv;
 
 
 @end

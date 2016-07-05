@@ -10,23 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, CvVideoCameraDelegate {
     
-    var myCamera : CvVideoCamera!
+    //var myCamera : CvVideoCamera!
+    var camWrapper:CVWrapper!
 
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        myCamera = CvVideoCamera(parentView: imageView)
-        myCamera.delegate = self
-        myCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePosition.Front
-        myCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetMedium
-        myCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientation.Portrait
-        var xform: CGAffineTransform = CGAffineTransformMakeRotation(CGFloat(-M_PI / 2))
-        imageView.transform = xform
-
-        myCamera.start()
+        self.camWrapper = CVWrapper(imageView: imageView)
+        
     }
 
     override func didReceiveMemoryWarning() {

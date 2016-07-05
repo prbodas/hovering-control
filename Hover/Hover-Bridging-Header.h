@@ -13,3 +13,4 @@
 //#endif /* Hover_Bridging_Header_h */
 
 #import <opencv2/highgui/cap_ios.h>
+#import "CVWrapper.h"
