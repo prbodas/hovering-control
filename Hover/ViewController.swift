@@ -20,9 +20,12 @@ class ViewController: UIViewController, CvVideoCameraDelegate {
         
         myCamera = CvVideoCamera(parentView: imageView)
         myCamera.delegate = self
-        myCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePosition.Back
+        myCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePosition.Front
         myCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetMedium
-        myCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientation.LandscapeRight
+        myCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientation.Portrait
+        var xform: CGAffineTransform = CGAffineTransformMakeRotation(CGFloat(-M_PI / 2))
+        imageView.transform = xform
+
         myCamera.start()
     }
 

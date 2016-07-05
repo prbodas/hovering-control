@@ -14,11 +14,11 @@
 		9A5744E71D290AB300F66A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E51D290AB300F66A93 /* LaunchScreen.storyboard */; };
 		9A5744F21D290AB300F66A93 /* HoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744F11D290AB300F66A93 /* HoverTests.swift */; };
 		9A5744FD1D290AB300F66A93 /* HoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744FC1D290AB300F66A93 /* HoverUITests.swift */; };
-		9A57450B1D290AC100F66A93 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57450A1D290AC100F66A93 /* opencv2.framework */; };
 		9A57450D1D290AD900F66A93 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57450C1D290AD900F66A93 /* AssetsLibrary.framework */; };
 		9A57450F1D290AE000F66A93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57450E1D290AE000F66A93 /* CoreGraphics.framework */; };
 		9A5745121D290B9800F66A93 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A5745111D290B9800F66A93 /* UIImage+OpenCV.mm */; };
 		9A5745161D290C7600F66A93 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A5745151D290C7600F66A93 /* CVWrapper.mm */; };
+		A5E3827D1D29A259007BF32E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E3827C1D29A259007BF32E /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +52,14 @@
 		9A5744F81D290AB300F66A93 /* HoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744FC1D290AB300F66A93 /* HoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverUITests.swift; sourceTree = "<group>"; };
 		9A5744FE1D290AB300F66A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A57450A1D290AC100F66A93 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		9A57450C1D290AD900F66A93 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		9A57450E1D290AE000F66A93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9A5745111D290B9800F66A93 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		9A5745131D290BAC00F66A93 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
 		9A5745141D290C6100F66A93 /* CVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
 		9A5745151D290C7600F66A93 /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
-		9A5745171D290D5C00F66A93 /* Hover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hover-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A5745171D290D5C00F66A93 /* Hover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Hover-Bridging-Header.h"; path = "Hover/Hover-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		A5E3827C1D29A259007BF32E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E3827D1D29A259007BF32E /* opencv2.framework in Frameworks */,
 				9A57450F1D290AE000F66A93 /* CoreGraphics.framework in Frameworks */,
 				9A57450D1D290AD900F66A93 /* AssetsLibrary.framework in Frameworks */,
-				9A57450B1D290AC100F66A93 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +97,9 @@
 				9A5744F01D290AB300F66A93 /* HoverTests */,
 				9A5744FB1D290AB300F66A93 /* HoverUITests */,
 				9A5744DA1D290AB300F66A93 /* Products */,
+				A5E3827C1D29A259007BF32E /* opencv2.framework */,
 				9A57450C1D290AD900F66A93 /* AssetsLibrary.framework */,
 				9A57450E1D290AE000F66A93 /* CoreGraphics.framework */,
-				9A57450A1D290AC100F66A93 /* opencv2.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +217,7 @@
 				TargetAttributes = {
 					9A5744D81D290AB300F66A93 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 276R75FG83;
 					};
 					9A5744EC1D290AB300F66A93 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -425,14 +426,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Hover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = prbodas.Hover;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FBU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hover/Hover-Bridging-Header.h";
 			};
 			name = Debug;
@@ -441,14 +445,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Hover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = prbodas.Hover;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FBU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hover/Hover-Bridging-Header.h";
 			};
 			name = Release;
@@ -518,6 +525,7 @@
 				9A5745031D290AB300F66A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A5745041D290AB300F66A93 /* Build configuration list for PBXNativeTarget "HoverTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				9A5745061D290AB300F66A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A5745071D290AB300F66A93 /* Build configuration list for PBXNativeTarget "HoverUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +543,7 @@
 				9A5745091D290AB300F66A93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
